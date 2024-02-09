@@ -1,0 +1,70 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Run",
+            "request": "launch",
+            "mainClass": "runner.Run",
+            "projectName": "Empresa Arrays - copia_667a318f"
+        },
+        {
+            "type": "java",
+            "name": "Run",
+            "request": "launch",
+            "mainClass": "runner.Run",
+            "projectName": "Empresa Arrays_c41affc6"
+        },
+        {
+            "type": "java",
+            "name": "Run",
+            "request": "launch",
+            "mainClass": "runner.Run",
+            "projectName": "Empresa Arrays_24226733"
+        },
+        {
+            "type": "java",
+            "name": "Run",
+            "request": "launch",
+            "mainClass": "runner.Run",
+            "projectName": "Empresa_ce1eb34"
+        },
+        {
+            "type": "java",
+            "name": "Run",
+            "request": "launch",
+            "mainClass": "runner.Run",
+            "projectName": "p_employee_1391315a"
+        },
+        {
+            "type": "java",
+            "name": "Run",
+            "request": "launch",
+            "mainClass": "runner.Run",
+            "projectName": "p_employee_2ad6b0df"
+        },
+        {
+            "type": "java",
+            "name": "Run",
+            "request": "launch",
+            "mainClass": "runner.Run",
+            "projectName": "p_employee_ab6b1426"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Run",
+            "request": "launch",
+            "mainClass": "runner.Run",
+            "projectName": "p_employee_ba9a0cc7"
+        }
+    ]
+}

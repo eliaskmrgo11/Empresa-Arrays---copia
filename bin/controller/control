@@ -1,0 +1,47 @@
+package controller;
+
+import model.Date;
+import model.Employee;
+import view.IoManager;
+
+public class Control {
+    public IoManager io;
+
+    public Control() {
+        io= new IoManager();
+    }
+    //creador de fechas, cada que se desee crear una de fecha se puede recurrir a este metodo
+    public Date createDate(String message){
+        io.showMessage(message);
+        Short day = io.readShort("dia:");
+        Short month = io.readShort("mes:");
+        Short year = io.readShort("año:");
+        return new Date(day, month, year);
+    }
+    //creado un empleado con todos sus atributos
+    public Employee createEmployee(){
+        io.showMessage("ingrese los datos del empleado");
+        short id = io.readShort("id:");
+        String firstName = io.readString("nombre:");
+        String lastName = io.readString("apellido:");
+        double salary = io.readDouble("salario:");
+        Short childrenNumber = io.readShort("número de hijos:");
+        float comission = io.readFloat("comisión;");
+        Date birthDate = this.createDate("ingrese fecha de cumpleaños");
+        Date hirDate = this.createDate("ingrese fecha de contratación");
+        return new Employee(id, firstName, lastName, salary,childrenNumber,comission, birthDate, hirDate);
+    }
+    //contiene todo lo que se vaya a ejecutar
+    public void init(){
+        Employee employee = this.createEmployee();
+        //si bien es posible, requiere más lineas imprimir uno por uno cada get por lo que se recurre a un override
+        //Io.showMessage(employee.getFisrtname());
+        //Io.showMessage(employee.getLastName());
+        //Io.showMessage(""+employee.getSalary());
+        //el io manager imprime lo que este instanciado antes de el, por constante debe pornerse a lo ultimo 
+        //Io.showMessage(employee.toString())
+        io.showMessage("\n"+"los datos ingresados del empleado son:"+"\n"+employee.toString());
+        io.showMessage("la edad del empleado es:"+employee.getAge());
+        io.showMessage("la antiguedad del empleado en la empresa es: "+ employee.getAntiquity());
+    }
+}
